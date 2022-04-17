@@ -18,3 +18,4 @@ class DataBaseConnection:
 data_base1 = DataBaseConnection(r'C:\Users\Quantum\AppData\Local\Programs\Python\Python310\pycamp\send_email\books_borrows.db')
 for a in data_base1.data_base_con():
     print(a)
+    
