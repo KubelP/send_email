@@ -1,13 +1,11 @@
 '''Modul sending message by e-mail'''
 import smtplib
-from mail_message import MailMessage
 
 class MailSending:
     '''class sending e-mail used smtplib'''
     def __init__(self, user, password, message_pack):
         self.user = user
         self.password = password
-        # self.mail_message = MailMessage()
         self.message_pack = message_pack
 
     def mail_sending(self):

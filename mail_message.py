@@ -1,11 +1,9 @@
 '''This module creat message to send by email'''
-from data_base import DataBaseConnection
 
 class MailMessage:
     '''Class creat message from data unupacked in class DataBaseConnection'''
     def __init__(self, data):
         self.data = data
-        # self.data = self.data_base.data_base_con()
         self.message_pack = []
 
     def mail_message(self):

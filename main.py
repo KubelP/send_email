@@ -3,7 +3,7 @@ from mail_message import MailMessage
 from mail_sending import MailSending
 
 # from data_base
-data_base = DataBaseConnection(r'C:\Users\Quantum\AppData\Local\Programs\Python\Python310\pycamp\send_email\books_borrows.db')
+data_base = DataBaseConnection('data_base.db') # name and directory of data base
 data = data_base.data_base_con()
 
 # from mail_message
