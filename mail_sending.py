@@ -11,7 +11,7 @@ class MailSending:
     def mail_sending(self):
         '''sending email'''
         for message in self.message_pack:
-            for email in message:
+            for email in message: # message is a dict type
                 with smtplib.SMTP_SSL('smtp.gmail.com', 465) as server:
                     server.login(self.user, self.password)
                     server.sendmail(self.user, email, message[email])
