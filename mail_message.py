@@ -8,8 +8,8 @@ class MailMessage:
 
     def mail_message(self):
         '''Creating message and return final message as message_pack'''
-        for mail, name, title in self.data:
+        for mail, name, title, _ in self.data:
             message_to_send = {mail : f'{name}!!!! You are late with return\
-                 date of my book titeled {title}'}
+date of my book titled {title}'}
             self.message_pack.append(message_to_send)
         return self.message_pack
